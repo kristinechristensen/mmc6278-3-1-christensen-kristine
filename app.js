@@ -39,7 +39,7 @@ app.route('/api/city/:city')
     const jobCityInfo = {jobs, cityInfo};
 
     
-    //if no city info or jobs are found - return a 404 error if job or city infor is  not available.
+    //if no city info OR jobs are found - return a 404 error if job or city infor is  not available.
     
     if (jobs || cityInfo) {
         res.json(jobCityInfo)
